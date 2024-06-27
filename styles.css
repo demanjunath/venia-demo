@@ -1,0 +1,483 @@
+body {
+  font-family: sans-serif;
+}
+
+/* CSS style reset */
+/* A simple CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  color: #181c24;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* style reset ends */
+
+/* color variables */
+.color-grey {
+  color: #181c24;
+}
+/* color ends */
+
+/* Header styles */
+/* Heading Styles */
+h1 {
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  font-weight: bold;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  font-weight: bold;
+  color: #555;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: #777;
+}
+
+h4 {
+  font-size: 1em;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+  font-weight: bold;
+  color: #999;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+  font-weight: bold;
+  color: #bbb;
+}
+
+h6 {
+  font-size: 0.67em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  font-weight: bold;
+  color: #ddd;
+}
+
+/* Header style ends */
+
+/* For xs devices (less than 576px) */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* For sm devices (576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* For md devices (768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* For lg devices (992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* For xl devices (1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* For xxl devices (1400px and up) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* image styles */
+/* Make images fluid */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add a border for thumbnails */
+.img-thumbnail {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Align images */
+.float-left {
+  float: left;
+  margin-right: 0.5rem;
+}
+
+.float-right {
+  float: right;
+  margin-left: 0.5rem;
+}
+
+.mx-auto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Rounded corners */
+.rounded {
+  border-radius: 0.25rem;
+}
+
+/* image style ends */
+
+/* For fluid container (always 100% width) */
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  max-width: 900px;
+}
+
+.nav-wrapper-outer {
+  background: #1363df;
+}
+
+.nav-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-wrapper .nav li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 32px;
+}
+
+.nav-wrapper .nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-banner {
+  align-items: center;
+  background-color: #1b252c;
+}
+
+.hero-banner .banner-title {
+  text-align: center;
+}
+
+.hero-banner .banner-title h1 {
+  color: #fff;
+}
+
+.hero-banner .banner-title h1:after {
+  content: "";
+  display: block;
+  bottom: -20px;
+  height: 2px;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-bottom: 5px solid #1363df;
+}
+
+.hero-banner .banner-image img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-banner .banner-image {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
+.product-nav {
+  padding-top: 45px;
+}
+
+.product-filter > h6 {
+  padding-bottom: 16px;
+  border-bottom: 2px solid #d1d3d6;
+  font-weight: 600;
+  color: #181c24;
+}
+
+.product-filter > span {
+  font-weight: 600;
+  color: #181c24;
+}
+
+.product-filter ul {
+  margin-top: 16px;
+}
+
+.product-filter ul li {
+  list-style: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.filter-label-wrap > label {
+  padding-left: 15px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.filter-label-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.product-sort-wrap {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 35px;
+  justify-content: space-between;
+}
+
+.product-sort-wrap .results {
+  color: #172026;
+  font-weight: 600;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.product-row {
+  margin-bottom: 30px;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 8px;
+}
+
+footer {
+  border-top: 4px solid #e5e5e7;
+  border-bottom: 2px solid #e5e5e7;
+}
+
+.footer-container {
+  padding-top: 40px;
+}
+
+.footer-container h6 {
+  color: #172026;
+  margin-bottom: 16px;
+}
+
+.footer-end {
+  display: flex;
+  justify-content: space-between;
+  height: 134px;
+  padding-top: 25px;
+}
+
+.footer-terms a {
+  display: inline;
+  color: #172026;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+.footer-wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.product-image-wrap {
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 119.75%;
+}
+
+/* CSS styling */
+.styled-select {
+  background-color: #f2f2f2; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  padding: 6px 30px; /* Spacing inside the dropdown */
+  font-size: 14px; /* Text size */
+  color: #4a4a4a; /* Darker grey font color for the options */
+  border: none; /* No border */
+  -webkit-appearance: none; /* Removes default styling for select dropdown in WebKit browsers */
+  -moz-appearance: none; /* Removes default styling for select dropdown in Mozilla browsers */
+  appearance: none; /* Removes default styling for select dropdown */
+}
+
+/* Style for the arrow icon */
+.styled-select {
+  position: relative;
+}
+
+.styled-select:after {
+  content: "▼"; /* Downward arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Makes sure clicks on the arrow still open the dropdown */
+}
+
+.styled-select option:first-child {
+  display: none;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.button-wrapper .load-more-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.brand-logo {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .cat-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-content {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-wrapper .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-wrapper {
+    display: none;
+  }
+}
